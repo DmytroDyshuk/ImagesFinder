@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">restRequets</string>
+
+
+    <string name="favorite_icon">\uf005</string>
+    <string name="search_icon">\uf002</string>
+    <string name="heart_icon">\uf004</string>
+    <string name="likes_icon">\uf164</string>
+    <string name="trash_icon">\uf2ed</string>
+    <string name="sort_up_icon">\uf0de</string>
+    <string name="sort_down_icon">\uf0dd</string>
+
+    <string name="search_text">Поиск</string>
+    <string name="favourite_text">Избранное</string>
+</resources>

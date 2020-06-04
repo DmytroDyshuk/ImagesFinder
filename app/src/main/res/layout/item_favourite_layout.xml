@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/image_cat"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLikeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/likes_icon"
+        android:fontFamily="@font/font_awesome_5_pro_regular_400"
+        android:textSize="26sp"
+        android:textColor="@color/colorLike"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="708"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        android:background="#40000000"
+        android:textAlignment="center"
+        android:padding="4dp"
+        app:layout_constraintTop_toTopOf="@id/ivImage"
+        app:layout_constraintStart_toStartOf="@id/ivImage"
+        app:layout_constraintEnd_toEndOf="@id/ivImage"/>
+
+    <TextView
+        android:id="@+id/tvOfFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome_5_pro_solid_900"
+        android:text="@string/favorite_icon"
+        android:textSize="24sp"
+        android:textColor="@color/colorHeart"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintEnd_toEndOf="@id/ivImage"
+        app:layout_constraintBottom_toBottomOf="@id/ivImage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
