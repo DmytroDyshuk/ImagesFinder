@@ -3,6 +3,8 @@ package com.example.restrequets
 import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -21,6 +23,7 @@ import kotlinx.android.synthetic.main.fragment_search.*
 import org.json.JSONObject
 
 
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         AndroidNetworking.initialize(applicationContext)
         Realm.init(this)
+
 
         AndroidNetworking.get("https://api.unsplash.com/search/photos")
             .addQueryParameter("per_page", "100")

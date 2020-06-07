@@ -36,6 +36,8 @@ class RecyclerViewAdapter( private val values: ArrayList<Image>): RecyclerView.A
         holder.tvToFavourites?.setOnClickListener {
             RealmHelper().saveImageToRealm(image)
         }
+
+
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

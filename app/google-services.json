@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "943877985125",
+    "firebase_url": "https://my-first-test-app-e52c7.firebaseio.com",
+    "project_id": "my-first-test-app-e52c7",
+    "storage_bucket": "my-first-test-app-e52c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943877985125:android:471e5c7d9f51a3a3e9478c",
+        "android_client_info": {
+          "package_name": "com.example.restrequets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943877985125-5ksbkbpm96438h2aa6qkjl8r33hedv7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVQFKzqLWnWT6aroGq8W2jz1R8TCsOyrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943877985125-5ksbkbpm96438h2aa6qkjl8r33hedv7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

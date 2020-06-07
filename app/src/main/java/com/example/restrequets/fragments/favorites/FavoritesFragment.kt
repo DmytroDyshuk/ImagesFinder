@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.fragment_favorites.*
 import kotlinx.android.synthetic.main.fragment_favorites.view.*
 import kotlinx.android.synthetic.main.fragment_favorites.view.tvDeleteAll
 import kotlinx.android.synthetic.main.fragment_search.*
+import kotlinx.android.synthetic.main.item_picture_layout.*
 
 
 class FavoritesFragment : Fragment() {
@@ -42,6 +43,7 @@ class FavoritesFragment : Fragment() {
         tvSortDown.setOnClickListener {
             sortDownReload()
         }
+
     }
 
     private fun initAdapter(view: View) {

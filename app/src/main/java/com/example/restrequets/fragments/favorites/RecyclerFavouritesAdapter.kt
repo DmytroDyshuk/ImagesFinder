@@ -32,6 +32,7 @@ class RecyclerFavouritesAdapter( private val values: ArrayList<Image>): Recycler
             holder.tvTitle?.text = image.description
             holder.tvTitle?.visibility = View.VISIBLE
         }
+
         holder.tvOfFavourites?.setOnClickListener {
             RealmHelper().deleteImageFromRealm(image.id)
             values.removeAt(position)
