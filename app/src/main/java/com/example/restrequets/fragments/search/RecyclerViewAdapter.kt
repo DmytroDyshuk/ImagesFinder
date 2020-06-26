@@ -12,7 +12,7 @@ import com.example.restrequets.db.RealmHelper
 import com.example.restrequets.model.Image
 import com.squareup.picasso.Picasso
 
-class RecyclerViewAdapter( private val values: ArrayList<Image>): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
+class RecyclerViewAdapter(private val values: ArrayList<Image>): RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
 
     override fun getItemCount() = values.size
 
@@ -36,8 +36,6 @@ class RecyclerViewAdapter( private val values: ArrayList<Image>): RecyclerView.A
         holder.tvToFavourites?.setOnClickListener {
             RealmHelper().saveImageToRealm(image)
         }
-
-
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

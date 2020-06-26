@@ -12,8 +12,6 @@ import com.androidnetworking.common.Priority
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.JSONObjectRequestListener
 import com.example.restrequets.R
-import com.example.restrequets.db.RealmHelper
-import com.example.restrequets.fragments.favorites.RecyclerFavouritesAdapter
 import com.example.restrequets.model.Image
 import io.realm.Realm
 import kotlinx.android.synthetic.main.fragment_search.*
