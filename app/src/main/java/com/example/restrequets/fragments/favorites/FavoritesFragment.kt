@@ -12,15 +12,12 @@ import com.example.restrequets.db.RealmHelper
 import com.example.restrequets.model.Image
 import kotlinx.android.synthetic.main.fragment_favorites.*
 import kotlinx.android.synthetic.main.fragment_favorites.view.*
-import kotlinx.android.synthetic.main.fragment_favorites.view.tvDeleteAll
-import kotlinx.android.synthetic.main.fragment_search.*
-import kotlinx.android.synthetic.main.item_picture_layout.*
 
 
 class FavoritesFragment : Fragment() {
 
     private val itemList = ArrayList<Image>()
-    private var adapter = RecyclerFavouritesAdapter(itemList)
+    private var adapter = FavouritesAdapter(itemList)
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_favorites, container, false)

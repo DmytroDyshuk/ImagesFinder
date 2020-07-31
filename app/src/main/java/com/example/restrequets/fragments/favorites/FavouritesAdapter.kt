@@ -12,7 +12,7 @@ import com.example.restrequets.model.Image
 import com.squareup.picasso.Picasso
 
 
-class RecyclerFavouritesAdapter( private val values: ArrayList<Image>): RecyclerView.Adapter<RecyclerFavouritesAdapter.ViewHolder>() {
+class FavouritesAdapter(private val values: ArrayList<Image>): RecyclerView.Adapter<FavouritesAdapter.ViewHolder>() {
 
     override fun getItemCount() = values.size
 

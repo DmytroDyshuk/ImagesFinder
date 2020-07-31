@@ -10,5 +10,4 @@ open class Image : RealmObject() {
     var urlRegular: String? = null
     var likes: Int? = null
     var description: String? = null
-
 }
