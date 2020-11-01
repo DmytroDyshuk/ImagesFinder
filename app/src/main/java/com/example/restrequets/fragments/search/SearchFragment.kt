@@ -65,7 +65,7 @@ class SearchFragment : Fragment() {
                             imagesList.add(image)
                         }
                         rvPictures.layoutManager = GridLayoutManager(view.context, 2)
-                        rvPictures.adapter = RecyclerViewAdapter(imagesList)
+                        rvPictures.adapter = adapter
                     }
 
                     override fun onError(error: ANError) {
